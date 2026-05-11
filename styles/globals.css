@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-display: "Inter", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", "Courier New", monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-family: var(--font-sans);
+  background-color: #0f172a;
+  color: #f8fafc;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::selection {
+  background: #0ea5e9;
+  color: #f8fafc;
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-2xl
+           bg-blue-500 text-white font-medium text-sm
+           hover:bg-blue-400 active:bg-blue-500
+           transition-colors shadow-[0_30px_60px_-45px_rgba(59,130,246,0.85)];
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-2xl
+           bg-zinc-900 text-zinc-200 font-medium text-sm border border-zinc-800
+           hover:bg-zinc-800 active:bg-zinc-700
+           transition-colors;
+  }
+
+  .card {
+    @apply bg-zinc-900 rounded-[1.75rem] p-6 border border-zinc-800 shadow-[0_30px_80px_-60px_rgba(15,23,42,0.9)];
+  }
+
+  .glass-card {
+    @apply rounded-[1.75rem] border border-zinc-800 bg-zinc-950/70 backdrop-blur-sm p-6;
+  }
+
+  .input-base {
+    @apply w-full px-3.5 py-2.5 rounded-2xl border border-zinc-800
+           bg-zinc-950 text-zinc-100 text-sm
+           focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent
+           transition;
+  }
+}

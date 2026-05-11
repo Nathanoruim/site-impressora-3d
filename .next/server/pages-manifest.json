@@ -1,0 +1,11 @@
+{
+  "/_app": "pages/_app.js",
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js",
+  "/": "pages/index.js",
+  "/Pag-Cards/overhang": "pages/Pag-Cards/overhang.js",
+  "/Pag-Cards/retraction": "pages/Pag-Cards/retraction.js",
+  "/filamentos": "pages/filamentos.js",
+  "/testes": "pages/testes.js",
+  "/impressoras": "pages/impressoras.js"
+}
