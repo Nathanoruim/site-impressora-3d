@@ -110,7 +110,7 @@ export default function BenchyPage() {
               </p>
 
               <a
-                href="https://www.printables.com/model/3161-3d-benchy"
+                href="https://makerworld.com/pt/models/40146-benchy-bambu-pla-basic?from=search#profileId-109644"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex w-full items-center justify-center rounded-2xl bg-blue-600 px-5 py-3 text-sm font-semibold text-white transition hover:bg-blue-500"
